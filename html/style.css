@@ -1,0 +1,30 @@
+header{
+    background: red;
+    padding: 20px;
+}
+.header-box{
+    width: 940px;
+    text-align:center;
+    margin: 0 auto;
+    position: relative;
+}
+
+li{
+    display: inline-block;
+    text-align:center;
+    width: 40%;
+    vertical-align: top;
+    margin: 0 3%;
+    border: 2px #ced83c solid;
+    border-radius: 15px;
+}
+img.example {
+    width: 250px;
+    height: auto;
+    }
+.interests li:hover{
+    border-color: blue;
+}
+.interests li:hover{
+    font-size: 32px;
+}
