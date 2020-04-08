@@ -8,3 +8,6 @@ header{
     margin: 0 auto;
     position: relative;
 }
+li{
+    display: inline;
+}
