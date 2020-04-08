@@ -1,0 +1,10 @@
+header{
+    background: red;
+    padding: 20px
+}
+.header-box{
+    width: 940px;
+    text-align:center;
+    margin: 0 auto;
+    position: relative;
+}
