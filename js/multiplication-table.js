@@ -17,7 +17,7 @@ function multiplication(number) {
    let result;
    for(let index=0; index <= 10; index++){
         result = index * number;
-        console.log(result);
+        console.log(number +  "×" + index + "=" + result);
    }
 }
 
