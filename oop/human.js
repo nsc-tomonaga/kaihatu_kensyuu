@@ -5,8 +5,8 @@ class human{
         this._mp = mp;
         this._weapon = weapon;
     }
-    get attack(){
-        console.log('$(this_name)は$(this_weapon)で攻撃した。');
+    attack(){
+        console.log(this._name,"は",this._weapon,'で攻撃した。');
     }
 }
 
@@ -17,8 +17,8 @@ class monster{
         this._mp = mp;
         this._weapon = weapon;
     }
-    get attack(){
-        console.log('$(this_name)は$(this_weapon)で攻撃した。');
+    attack(){
+        console.log(this._name,'は',this._weapon,'で攻撃した。');
     }
 }
 
@@ -32,17 +32,17 @@ class Wizard extends human{
     constructor(name,hp,mp,weapon){
         super(name,hp,mp,weapon);
     }
-    get spell(){
-        console.log("$(this_name)は呪文を唱えた");
+    spell(){
+        console.log(this._name,"は呪文を唱えた");
     }
 }
 
-class Cleric extends numan{
+class Cleric extends human{
     constructor(name,hp,mp,weapon){
         super(name,hp,mp,weapon);
     }
-    get heal(){
-        console.log("$(this_name)は回復した");
+    heal(){
+        console.log(this._name,"は回復した");
     }
 }
 
@@ -50,8 +50,8 @@ class Berseker extends human{
     constructor(name,hp,mp,weapon){
         super(name,hp,mp,weapon);
     }
-    get beast(){
-        console.log("$(this_name)は獣化した");
+    beast(){
+        console.log(this._name,"は獣化した");
     }
 }
 
@@ -65,8 +65,8 @@ class Ork extends monster{
     constructor(name,hp,mp,weapon){
         super(name,hp,mp,weapon);
     }
-    get escape(){
-        console.log("$(this_name)は逃げた");
+    escape(){
+        console.log(this._name,"は逃げた");
     }
 }
 
@@ -74,7 +74,10 @@ class LastBoss extends monster{
     constructor(name,hp,mp,weapon){
         super(name,hp,mp,weapon);
     }
-    get revive(name){
-        console.log("$(this._name)は蘇った");
+    revive(){
+        console.log(this._name,"は蘇った");
     }
 }
+
+let a = new Berseker("バーサーカー",100,100,"剣");
+a.attack();
