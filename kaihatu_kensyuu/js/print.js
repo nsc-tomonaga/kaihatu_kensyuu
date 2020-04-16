@@ -18,7 +18,7 @@ for(let y = 1;y <= 10; y++){
 
         let padnumber = (x * y).toString().padStart(3,"0");
 
-        line += " " + x * y;
+        line += " " + padnumber;
     }
 
     console.log(line);
