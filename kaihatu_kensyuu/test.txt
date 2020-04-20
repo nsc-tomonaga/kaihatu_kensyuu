@@ -1,0 +1,32 @@
+let birthday = 2;
+let food = "ハンバーグ";
+
+function HelloWorld(){
+    console.log("HelloWorld");
+}
+
+function souce(tabemono){
+    console.log(tabemono + "はデミグラスソースが一番いい。");
+}
+
+HelloWorld();
+souce("ハンバーグ");
+
+let x = Math.random()*10;
+if(x % 2){
+}else{
+    if(x == birthday){
+    }else{
+    }
+}
+
+for(let index = 2; index<50; index = index * 2){
+}
+
+class food{
+    constructor(namae,nedan){
+        this._namae = namae;
+        this._nedan = nedan;
+    }
+    method();
+}
